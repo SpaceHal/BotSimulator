@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sketch</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.js"></script>
+  <script src="bot.js"></script>
+  <script src="sensor.js"></script>
+  <script src="pidControl.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+
+  <h1> 
+    Simulator eines Linienfolgers mit PID-Regler
+  </h1>
+
+
+  <div style="width: 1000px;  margin-left: auto; margin-right: auto; float: left;">
+
+    <div>
+      <div id='control' class="left">
+        <h4 >PID-Regler </h4>
+
+        <input type="range" id="sliderProp" class="slider" min="0" max="100">
+        <label for="sliderProp" id="txtProp"> Proportional</label> <br>
+
+        <input type="range" id="sliderInt" class="slider" min="0" max="100">
+        <label for="sliderInt" id="txtInt"> Integral</label> <br>
+
+        <input type="range" id="sliderDiff" class="slider" min="0" max="100">
+        <label for="sliderDiff" id = "txtDiff"> Differential</label> <br><br>
+
+        <input type="range" id="sliderVel" class="slider" min="0" max="255">
+        <label for="sliderVel" id="txtVel"> Geschwindigkeit</label> <br> <br>
+
+        <h4 >Roboterwerte </h4>
+
+        <input type="text" id="txSensor" class="txtSensor">
+        <label for="txSensor">Bodensensor</label><br>
+
+        <input type="text" id="txMotorL" class="txtSensor">
+        <label for="txMotorL">Motor links</label><br>
+
+        <input type="text" id="txMotorR" class="txtSensor">
+        <label for="txMotorR">Motor rechts</label><br> <br>
+
+
+        <label class="checkbox">
+          <input type="checkbox" />
+          <span>Check Me</span>
+      </label>
+      
+
+      </div>
+    </div>
+    <br>
+
+
+    <div id='container' class="right">
+      
+    </div>
+
+
+  </div><br>
+
+
+
+</body>
+
+</html>
