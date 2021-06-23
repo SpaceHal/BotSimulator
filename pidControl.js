@@ -40,7 +40,7 @@ class cPidControl{
                 + ", kp: ", (this.kp * this.er)
                 + ", kd: " + (this.kd * this.derivative)
                 + ", deltaAngularV: ", dAngV);
-                this.bot.angularVelLeft  = constrain(this.bot.maxAngularV + dAngV, 0, this.bot.maxAngularV); // mehr nach rechts, als linkes Rad schneller
+                this.bot.angularVelLeft  = constrain(this.bot.maxAngularV + dAngV, 0, this.bot.maxAngularV); // mehr nach rechts, also linkes Rad schneller
                 this.bot.angularVelRight = constrain(this.bot.maxAngularV - dAngV, 0, this.bot.maxAngularV); // und rechtes Rad langsamer
     
           //bot.setMotorL((int) constrain(bot.maxAngularV + dAngV, 0, bot.maxAngularV)); // mehr nach rechts, als linkes Rad schneller

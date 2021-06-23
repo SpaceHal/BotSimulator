@@ -46,12 +46,8 @@ class cBot{
 
     }
 
-     //<>//
-
 
  /*
-
-  
     /*
     Der Vektor *position (x) zeigt immer auf den Achsenmittelpunkt
      
@@ -59,11 +55,6 @@ class cBot{
      H----x----H
      H         H 
      */
-  
-
-
-  
-
 
     /**
    * @param {number} pSpeed
@@ -99,7 +90,7 @@ class cBot{
     }
   
   
-    //Differentieller Antrieb (Differental DRive): 
+    // Differentieller Antrieb (Differental DRive): 
     // Bestimmt die absolute Lage des Roboters aus der Winkelgeschwindigkeit der Räder und der Orientierung
     update_ddr() {
         let now = millis();
